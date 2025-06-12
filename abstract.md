@@ -1,1 +1,1 @@
-TODO: vul in abstract.md een abstract in.
+Deze module van de MIM standaard bevat een mapping van het metamodel naar de ArchiMate modelleerstandaard.
