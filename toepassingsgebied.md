@@ -1,6 +1,6 @@
 # Toepassingsgebied
 
-Deze module is gericht op het relateren van informatie- en gegevensmodellen die zijn opgesteld conform de MIM standaard en architectuurmodellen die zijn opgesteld conform de ArchiMate standaard [[ArchiMate32]]. Daarnaast geeft het ook in bredere zin zicht op de relatie tussen informatie/gegevensmodellering en architectuurmodellering.
+Deze module is gericht op het relateren van informatie- en gegevensmodellen die zijn opgesteld conform de MIM standaard en architectuurmodellen die zijn opgesteld conform de ArchiMate standaard. Daarnaast geeft het ook in bredere zin zicht op de relatie tussen informatie/gegevensmodellering en architectuurmodellering.
 
 De volgende doelen worden ondersteund:
 * Het kunnen schetsen van informatie/gegevensmodellen conform de MIM standaard in de ArchiMate modelleertaal, als startpunt voor verdere uitwerking in specifieke tools voor informatie/gegevensmodellering.

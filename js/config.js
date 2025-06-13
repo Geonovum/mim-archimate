@@ -85,6 +85,15 @@ let respecConfig = {
       status: "Definitief",
       publisher: "The Open Group",
       date: "2023-01-03"
+    },
+    
+    MIM12: {
+      id: "MIM12",
+      title: "MIM - Metamodel Informatie Modellering (Versie 1.2)",
+      href: "https://docs.geostandaarden.nl/mim/def-st-mim-20240613/",
+      status: "Definitief",
+      publisher: "Geonovum",
+      date: "2024-06-13"
     }
   }
 };
