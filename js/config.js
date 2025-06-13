@@ -85,7 +85,7 @@ let respecConfig = {
       status: "Definitief",
       publisher: "The Open Group",
       date: "2023-01-03"
-    }
+    },
     
     MIM12: {
       id: "MIM12",
