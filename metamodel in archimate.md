@@ -10,6 +10,17 @@ Het resulterende profiel is conform MIM en conform deze modelleertaal.
 
 ### Kern
 
+| **MIM metaclass**   | **ArchiMate concept**   |
+| ------------------- | ----------------------- |
+| Objecttype          | Business Object         |
+| Attribuutsoort      | Business Object         |
+| Gegevensobjecttype  | Data Object             |
+| Gegevenstype        | Data Object             |
+| Gegevensgroep       | Data Object             |
+| Gegevensgroeptype   | Data Object             |
+| Generalisatie       | Generalization          |
+| Relatiesoort        | Association             |
+| Relatieklasse       | Business Object         |
 
 
 ### Datatypen
