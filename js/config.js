@@ -46,9 +46,9 @@ let respecConfig = {
   editors:
     [
       {
-        name: "voornaam achternaam",
-        company: "Geonovum",
-        companyURL: "https://www.geonovum.nl",
+        name: "Danny Greefhorst",
+        company: "ArchiXL",
+        companyURL: "https://www.archixl.nl",
       }
     ],
   //-- de namen van de auteur(s) ------------------------------------------------------
@@ -56,9 +56,9 @@ let respecConfig = {
   authors:
     [
       {
-        name: "voornaam achternaam",
-        company: "Geonovum",
-        companyURL: "https://www.geonovum.nl",
+        name: "Danny Greefhorst",
+        company: "ArchiXL",
+        companyURL: "https://www.archixl.nl",
       }
     ],
   // TODO: Vul de github URL in.
