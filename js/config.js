@@ -69,7 +69,7 @@ let respecConfig = {
   alternateFormats: [
       {
           label: "pdf",
-          uri: "template.pdf",
+          uri: "mim-archimate.pdf",
       },
   ],
   // Lokale lijst voor bibliografie
@@ -78,6 +78,15 @@ let respecConfig = {
   // - Voeg dan pas hieronder toe.
   localBiblio: 
   {
+    ArchiMate32: {
+      id: "ArchiMate32",
+      title: "ArchiMate® 3.2 Specification",
+      href: "https://www.opengroup.org/archimate-forum/archimate-overview",
+      status: "Definitief",
+      publisher: "The Open Group",
+      date: "2023-01-03"
+    }
+    
     MIM12: {
       id: "MIM12",
       title: "MIM - Metamodel Informatie Modellering (Versie 1.2)",
