@@ -2,16 +2,9 @@
 
 ## Termen, definities
 
+De volgende begrippen uit de ArchiMate standaard zijn relevant voor deze standaard.
+
 | Term                   | Definitie                                                                                                                                             |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <dfn>Fiets</dfn>       | Een vervoermiddel met minimaal twee wielen dat met spierkracht via pedalen wordt aangedreven, al dan niet met elektrische trapondersteuning          |
-
-
-
-<p class="note" title="">
-Geef de term op deze manier aan in de tekst:  
-We gebruiken een <a>fiets</a> om te fietsen.
-</p>
-
-
-## Afkortingen
+| <dfn>Business Object</dfn>       | A concept used within a particular business domain.          |
+| <dfn>Data Object</dfn>       | Data structured for automated processing.          |
