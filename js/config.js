@@ -87,6 +87,15 @@ let respecConfig = {
       date: "2023-01-03"
     },
     
+    ArchiMateExchange: {
+      id: "ArchiMateExchange",
+      title: "ArchiMate® Model Exchange File Format for the ArchiMate Modeling Language, Version 3.1",
+      href: "https://www.opengroup.org/open-group-archimate-model-exchange-file-format",
+      status: "Definitief",
+      publisher: "The Open Group",
+      date: "2019-11"
+    },
+  
     MIM12: {
       id: "MIM12",
       title: "MIM - Metamodel Informatie Modellering (Versie 1.2)",
