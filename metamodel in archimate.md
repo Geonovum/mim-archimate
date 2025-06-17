@@ -39,6 +39,8 @@ Een belangrijk aandachtspunt is dat architectuurmodellen ook van nature meer abs
 #### Packages
 
 ## Specificaties metagegevens in ArchiMate
+De ArchiMate standaard beschrijft zelf niet welke eigenschappen modelelementen kunnen hebben. Daarnaast kent de standaard ook geen datatypen voor eigenschappen. Om die reden worden alle metagegevens van de MIM metaklassen één-op-één worden overgenomen bij ArchiMate modelelementen. Daarbij wordt de letterlijke naam van het metagegeven (zoals bijvoorbeeld "Toelichting") als eigenschap opgenomen bij het ArchiMate modelelement.
 
+Uitzondering op bovenstaande geldt voor de metagegevens "Naam" en "Definitie". Deze worden respectievelijk opgenomen in de eigenschappen "name" en "documentation" in de ArchiMate uitwisselstandaard.   
 
 
