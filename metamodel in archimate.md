@@ -33,7 +33,7 @@ De volgende tabel beschrijft hoe de metaclasses in de kern van MIM zich verhoude
 | Relatieklasse       | Business Object          | Relatieklasse      |
 | Externe koppeling   | Gegevensobjecttype       | Externe koppeling  |
 
-Een relatiesoort kent in ArchiMate drie mogelijkheden: association, aggregation of composition. Er is geen specialisatie van deze relatie nodig omdat de betekenis deze gebonden is één van deze drie mogelijkheden. 
+Een relatiesoort kent in ArchiMate drie mogelijkheden: association, aggregation of composition. Er is geen specialisatie van deze relatie nodig omdat de betekenis gebonden is aan één van deze drie mogelijkheden. 
 
 Een generalisatie-relatie in MIM heeft in ArchiMate alleen een inverse tegenhanger (Specialization). Er is ook geen specialisatie van deze relatie nodig omdat er maar één logische betekenis is voor deze relatie.
 
