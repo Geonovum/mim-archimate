@@ -17,8 +17,7 @@ We kiezen er in deze standaard voor om de volgende MIM metaclasses <u>niet</u> t
 ## Structuur metamodel in ArchiMate
 
 ### Kern
-
-<img src="https://geonovum.github.io/mim-archimate/media/kern.png">
+test
 ![Kern](https://geonovum.github.io/mim-archimate/media/kern.png)
 
 De volgende tabel beschrijft hoe de metaclasses in de kern van MIM zich verhouden tot de te gebruiken ArchiMate elementen en welke specialisaties moeten worden aangebracht in de ArchiMate elementen om ze de betekenis uit MIM te geven. 
@@ -133,3 +132,6 @@ De ArchiMate standaard beschrijft zelf niet welke eigenschappen modelelementen k
 
 Uitzondering op bovenstaande geldt voor de metagegevens "Naam" en "Definitie", waarvoor gebruik wordt gemaakt van de eigenschappen "name" en "documentation" in de ArchiMate uitwisselstandaard [[ArchiMateExchange]]. Die eigenschappe worden in de uitwisselstandaard anders behandeld dan andere eigenschappen.
 
+
+
+[def]: ttps://geonovum.github.io/mim-archimate/media/kern.pn
