@@ -19,6 +19,8 @@ We kiezen er in deze standaard voor om de volgende MIM metaclasses <u>niet</u> t
 ### Kern
 ![Kern](/mim-archimate/media/kern.png)
 
+Er is bewust voor gekozen om in het diagram de relatie-gerelateerde meta-classes in MIM niet te tonen als aparte entiteiten. Zij worden verderop in dit document verder uitgewerkt.
+
 De volgende tabel beschrijft hoe de metaclasses in de kern van MIM zich verhouden tot de te gebruiken ArchiMate elementen en welke specialisaties moeten worden aangebracht in de ArchiMate elementen om ze de betekenis uit MIM te geven. 
 
 | **MIM metaclass**   | **ArchiMate element**    | **Specialisatie**  |
@@ -52,23 +54,25 @@ Voor de bindingen tussen de modelelementen wordt gebruik gemaakt van de in MIM v
 
 ### Datatypen
 
+![Datatype](/mim-archimate/media/datatype.png)
+
 | **MIM metaclass**       | **ArchiMate element** | **Specialisatie** |
 | ----------------------- | --------------------- | ----------------- |
 | Datatype                | Data Object | Datatype | 
 | Primitief datatype      | Data Object | Primitief datatype |
 | Gestructureerd datatype | Data Object | Gestructureerd datatype |
-| Data element            | Data Object | Data element |
+| Data-element            | Data Object | Data-element |
 | Enumeratie              | Data Object | Enumeratie |
 | Enumeratiewaarde        | Data Object | Enumeratiewaarde |
 | Referentielijst         | Data Object | Enumeratiewaarde |
-| Referentie element      | Data Object | Referentie element |
+| Referentie-element      | Data Object | Referentie-element |
 | Codelijst               | Data Object | Codelijst |
 
 
 | **MIM binding**          | **ArchiMate element**   | **Specialisatie**        |
 | ------------------------ | ----------------------- | ------------------------ |
 | heeft datatype           | Aggregation             | heeft dataype            |
-| heeft data-element       | Aggregation             | heeft data-element       |
+| heeft data-element       | Composition             | heeft data-element       |
 
 ### Overig
 
@@ -85,17 +89,16 @@ Voor de bindingen tussen de modelelementen wordt gebruik gemaakt van de in MIM v
 
 #### Keuze
 
-Het modelelement keuze bepaalt dat er meerdere opties mogelijk zijn, waarvan er één gekozen moet worden. In ArchiMate wordt hiervoor gebruik gemaakt van het Junction element, dat bedoeld is om relaties aan elkaar te verbinden. In het bijzonder gaat het omn de "Or" variant, die stelt dat minimaal één van de relaties moet worden gekozen. De "minimaal één" betekenis is ruimer dan wat nodig is voor de Keuze in MIM, maast past dus wel.  
-
 | **MIM metaclass**       | **ArchiMate element** | **Specialisatie** |
 | ----------------------- | --------------------- | ----------------- |
-| Keuze                   | Junction (Or)         | \-                | 
+| Keuze                   | Data Object           | Keuze             | 
 
+Het modelelement keuze bepaalt dat er meerdere opties mogelijk zijn, waarvan er één gekozen moet worden. 
 Er zijn vijf situaties mogelijk waarin een keuze toegepast wordt.
 
 - Use case 1: een keuze tussen datatypen
-- Use case 2: een keuze tussen twee of meer attribuutsoorten
-- Use case 3: een keuze tussen meerdere manieren om één betekenisvol attribuutsoort in te vullen
+- Use case 2: een keuze tussen twee of meer attribuutsoorten (@gegevenstypen?@)
+- Use case 3: een keuze tussen meerdere manieren om één betekenisvol attribuutsoort (@gegevenstype@?) in te vullen
 - Use case 4: een keuze tussen relatiedoelen, als nadere invulling van één betekenisvolle relatiesoort
 - Use case 5: een keuze tussen relatiesoorten/relatierollen (elk afzonderlijk betekenisvol)
 
@@ -111,6 +114,8 @@ Voor elke toepassing geldt een aparte subset van het metamodel.
 | heeft keuzeattribuut     | Aggregation             | heeft keuzeattribuut     |
 | heeft relatiedoelkeuze   | Aggregation             | heeft relatiedoelkeuze   |
 | heeft relatiesoortkeuze  | Aggregation             | heeft relatiesoortkeuze  |   
+
+#### Relatierol
 
 #### Waardelijsten
 
