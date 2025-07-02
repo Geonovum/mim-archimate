@@ -93,7 +93,7 @@ let respecConfig = {
       href: "https://www.opengroup.org/open-group-archimate-model-exchange-file-format",
       status: "Definitief",
       publisher: "The Open Group",
-      date: "2019-11"
+      date: "2019-11-15"
     },
   
     MIM12: {
