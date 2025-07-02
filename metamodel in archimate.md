@@ -18,7 +18,7 @@ We kiezen er in deze standaard voor om de volgende MIM metaclasses <u>niet</u> t
 
 ### Kern
 
-![Kern](./respec/media/kern.png)
+![Kern](./media/kern.png)
 
 De volgende tabel beschrijft hoe de metaclasses in de kern van MIM zich verhouden tot de te gebruiken ArchiMate elementen en welke specialisaties moeten worden aangebracht in de ArchiMate elementen om ze de betekenis uit MIM te geven. 
 
