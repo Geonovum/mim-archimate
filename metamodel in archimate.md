@@ -48,13 +48,14 @@ Voor de bindingen tussen de modelelementen wordt gebruik gemaakt van de in MIM v
 | heeft gegevenstype       | Aggregation             | heeft gegevenstype       |
 | heeft gegevensgroep      | Aggregation             | heeft gegevensgroep      |
 | heeft gegevensgroeptype  | Aggregation             | heeft gegevensgroeptype  |
+| heeft datatype           | Aggregation             | heeft dataype            |
 | verwijst naar supertype  | Specialization          | \-                       |
 | heeft relatiesoort       | Association, Aggregation of Composition | \-       |
 | heeft externe koppeling  | Composition             | heeft externe koppeling  |
 
 ### Datatypen
 
-![Datatype](/mim-archimate/media/datatype.png)
+![Datatypen](/mim-archimate/media/datatypen.png)
 
 | **MIM metaclass**       | **ArchiMate element** | **Specialisatie** |
 | ----------------------- | --------------------- | ----------------- |
@@ -64,24 +65,25 @@ Voor de bindingen tussen de modelelementen wordt gebruik gemaakt van de in MIM v
 | Data-element            | Data Object | Data-element |
 | Enumeratie              | Data Object | Enumeratie |
 | Enumeratiewaarde        | Data Object | Enumeratiewaarde |
-| Referentielijst         | Data Object | Enumeratiewaarde |
+| Referentielijst         | Data Object | Referentielijst |
 | Referentie-element      | Data Object | Referentie-element |
 | Codelijst               | Data Object | Codelijst |
 
-
 | **MIM binding**          | **ArchiMate element**   | **Specialisatie**        |
 | ------------------------ | ----------------------- | ------------------------ |
-| heeft datatype           | Aggregation             | heeft dataype            |
 | heeft data-element       | Composition             | heeft data-element       |
+| bevat enumeratiewaarde   | Composition             | bevat enumeratiewaarde   |
+| bevat referentie-element | Composition             | bevat referentie-element |
 
 ### Overig
 
 #### Constraint
 
+![Constraint](/mim-archimate/media/constraint.png)
+
 | **MIM metaclass** | **ArchiMate element** | **Specialisatie** |
 |-------------------|-----------------------|-------------------|
 | Constraint        | Constraint            | \-                |
-
 
 | **MIM binding**          | **ArchiMate element**   | **Specialisatie**        |
 | ------------------------ | ----------------------- | ------------------------ |
@@ -104,25 +106,17 @@ Er zijn vijf situaties mogelijk waarin een keuze toegepast wordt.
 
 Voor elke toepassing geldt een aparte subset van het metamodel. 
 
-
 - Use case 1: een relatie naar een "Keuze"
 
 | **MIM binding**          | **ArchiMate element**   | **Specialisatie**        |
 | ------------------------ | ----------------------- | ------------------------ |
 | heeft datatypekeuze      | Aggregation             | heeft datatypekeuze      |
-| heeft attribuutkeuze     | Aggregation             | heeft attribuutkeuze     |
-| heeft keuzeattribuut     | Aggregation             | heeft keuzeattribuut     |
+| heeft gegevenstypekeuze  | Aggregation             | heeft gegevenstypekeuze  |
+| heeft keuzegegevenstype  | Aggregation             | heeft keuzegegevenstype  |
 | heeft relatiedoelkeuze   | Aggregation             | heeft relatiedoelkeuze   |
 | heeft relatiesoortkeuze  | Aggregation             | heeft relatiesoortkeuze  |   
 
 #### Relatierol
-
-#### Waardelijsten
-
-| **MIM binding**          | **ArchiMate element**   | **Specialisatie**        |
-| ------------------------ | ----------------------- | ------------------------ |
-| bevat enumeratiewaarde   | Composition             | bevat enumeratiewaarde   |
-| bevat referentie-element | Composition             | bevat referentie-element |
 
 #### Packages
 
