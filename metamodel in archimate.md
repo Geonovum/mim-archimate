@@ -18,6 +18,8 @@ We kiezen er in deze standaard voor om de volgende MIM metaclasses <u>niet</u> t
 
 ### Kern
 
+![Kern](./respec/media/kern.png)
+
 De volgende tabel beschrijft hoe de metaclasses in de kern van MIM zich verhouden tot de te gebruiken ArchiMate elementen en welke specialisaties moeten worden aangebracht in de ArchiMate elementen om ze de betekenis uit MIM te geven. 
 
 | **MIM metaclass**   | **ArchiMate element**    | **Specialisatie**  |
@@ -31,6 +33,7 @@ De volgende tabel beschrijft hoe de metaclasses in de kern van MIM zich verhoude
 | Generalisatie       | Specialization (inverse) | \-                 |
 | Relatiesoort        | Association, Aggregation of Composition | \-       |
 | Relatieklasse       | Business Object          | Relatieklasse      |
+| Externe koppeling   | Gegevensobjecttype       | Externe koppeling  |
 
 Een relatiesoort kent in ArchiMate drie mogelijkheden: association, aggregation of composition. Er is geen specialisatie van deze relatie nodig omdat de betekenis deze gebonden is één van deze drie mogelijkheden. 
 
@@ -41,10 +44,12 @@ Voor de bindingen tussen de modelelementen wordt gebruik gemaakt van de in MIM v
 | **MIM binding**          | **ArchiMate element**   | **Specialisatie**        |
 | ------------------------ | ----------------------- | ------------------------ |
 | heeft attribuut          | Aggregation             | heeft attribuut          |
+| heeft gegevenstype       | Aggregation             | heeft gegevenstype       |
 | heeft gegevensgroep      | Aggregation             | heeft gegevensgroep      |
 | heeft gegevensgroeptype  | Aggregation             | heeft gegevensgroeptype  |
 | verwijst naar supertype  | Specialization          | \-                       |
 | heeft relatiesoort       | Association, Aggregation of Composition | \-       |
+| heeft externe koppeling  | Composition             | heeft externe koppeling  |
 
 ### Datatypen
 
@@ -114,12 +119,6 @@ Voor elke toepassing geldt een aparte subset van het metamodel.
 | ------------------------ | ----------------------- | ------------------------ |
 | bevat enumeratiewaarde   | Composition             | bevat enumeratiewaarde   |
 | bevat referentie-element | Composition             | bevat referentie-element |
-
-#### Externe koppeling
-
-| **MIM binding**          | **ArchiMate element**   | **Specialisatie**        |
-| ------------------------ | ----------------------- | ------------------------ |
-| heeft externe koppeling  | Composition             | heeft externe koppeling  |
 
 #### Packages
 
