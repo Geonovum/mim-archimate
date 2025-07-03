@@ -165,16 +165,20 @@ Relatieklassen worden gerepesenteerd als ArchiMate bedrijfsobjecten, die een ass
 
 #### Packages
 
+![Domein](/mim-archimate/media/domein.png)
+
+| **MIM metaclass**   | **ArchiMate element**    | **Specialisatie**  |
+| ------------------- | ------------------------ | ------------------ |
+| Informatiemodel     | Grouping                 | Informatiemodel    |
+| Domein              | Grouping                 | Domein             |
+| Extern              | Grouping                 | Extern             |
+| View                | Grouping                 | View               |
+
 | **MIM binding**          | **ArchiMate element**   | **Specialisatie**        |
 | ------------------------ | ----------------------- | ------------------------ |
 | bevat modelelement       | Composition             | \-                       |
-
 
 ## Specificaties metagegevens in ArchiMate
 De ArchiMate standaard beschrijft zelf niet welke eigenschappen modelelementen kunnen hebben. Daarnaast kent de standaard ook geen datatypen voor eigenschappen. Om die reden worden alle metagegevens van de MIM metaklassen één-op-één worden overgenomen bij ArchiMate modelelementen. Daarbij wordt de letterlijke naam van het metagegeven (zoals bijvoorbeeld "Toelichting") als eigenschap opgenomen bij het ArchiMate modelelement.
 
 Uitzondering op bovenstaande geldt voor de metagegevens "Naam" en "Definitie", waarvoor gebruik wordt gemaakt van de eigenschappen "name" en "documentation" in de ArchiMate uitwisselstandaard [[ArchiMateExchange]]. Die eigenschappe worden in de uitwisselstandaard anders behandeld dan andere eigenschappen.
-
-
-
-[def]: ttps://geonovum.github.io/mim-archimate/media/kern.pn
