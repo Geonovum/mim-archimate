@@ -88,22 +88,11 @@ Voor de bindingen tussen de modelelementen wordt gebruik gemaakt van de in MIM v
 
 #### Keuze
 
+Het modelelement keuze bepaalt dat er meerdere opties mogelijk zijn, waarvan er één gekozen moet worden. Keuzes worden vastgelegd als ArchiMate Data Object. 
+
 | **MIM metaclass**       | **ArchiMate element** | **Specialisatie** |
 | ----------------------- | --------------------- | ----------------- |
 | Keuze                   | Data Object           | Keuze             | 
-
-Het modelelement keuze bepaalt dat er meerdere opties mogelijk zijn, waarvan er één gekozen moet worden. 
-Er zijn vijf situaties mogelijk waarin een keuze toegepast wordt.
-
-- Use case 1: een keuze tussen datatypen
-- Use case 2: een keuze tussen twee of meer attribuutsoorten (@gegevenstypen?@)
-- Use case 3: een keuze tussen meerdere manieren om één betekenisvol attribuutsoort (@gegevenstype@?) in te vullen
-- Use case 4: een keuze tussen relatiedoelen, als nadere invulling van één betekenisvolle relatiesoort
-- Use case 5: een keuze tussen relatiesoorten/relatierollen (elk afzonderlijk betekenisvol)
-
-Voor elke toepassing geldt een aparte subset van het metamodel. 
-
-- Use case 1: een relatie naar een "Keuze"
 
 | **MIM binding**          | **ArchiMate element**   | **Specialisatie**        |
 | ------------------------ | ----------------------- | ------------------------ |
@@ -112,6 +101,43 @@ Voor elke toepassing geldt een aparte subset van het metamodel.
 | heeft keuzegegevenstype  | Aggregation             | heeft keuzegegevenstype  |
 | heeft relatiedoelkeuze   | Aggregation             | heeft relatiedoelkeuze   |
 | heeft relatiesoortkeuze  | Aggregation             | heeft relatiesoortkeuze  |   
+
+Er zijn vijf situaties mogelijk waarin een keuze toegepast wordt.
+
+- Use case 1: een keuze tussen datatypen
+- Use case 2: een keuze tussen twee of meer gegevenstypen
+- Use case 3: een keuze tussen meerdere manieren om één betekenisvol gegevenstype in te vullen
+- Use case 4: een keuze tussen relatiedoelen, als nadere invulling van één betekenisvolle relatiesoort
+- Use case 5: een keuze tussen relatiesoorten/relatierollen (elk afzonderlijk betekenisvol)
+
+Voor elke toepassing geldt een aparte subset van het metamodel. 
+
+**Use case 1: Keuze tussen datatypen**
+In deze use-case wordt een gegevenstype van een gegevensobjecttype of gegevensgroeptype verbonden aan een keuze middels een aggregation relatie met specialisatie "heeft datatypekeuze". De keuze zelf wordt vervolgens met een aggregation relatie verbonden aan 2 of meer datatypes waaruit gekozen moet worden.
+
+![Datatypekeuze](/mim-archimate/media/datatypekeuze.png)
+
+**Use case 2: Keuze tussen 2 of meer gegevenstypen**
+In deze use-case wordt een gegevensobjecttype of gegevensgroeptype verbonden aan een keuze middels een aggregation relatie met specialisatie "heeft gegevenstypekeuze". De keuze zelf wordt vervolgens met een aggregation relatie verbonden aan 2 of meer gegevenstypes waaruit gekozen moet worden.
+
+![Gegevenstypekeuze](/mim-archimate/media/gegevenstypekeuze.png)
+
+**Use case 3: Keuze tussen meerdere manieren om 1 betekenisvol gegevenstype in te vullen**
+Deze use case volgt hetzelfde patroon als de voorgaande use case.
+
+VRAAG: Wat is nu fundamenteel anders in use-case 2 en 3? In de LD mapping worden ze ook niet van elkaar onderscheiden.
+
+**Use case 4: Keuze tussen relatiedoelen, als nadere invulling van 1 betekenisvolle relatiesoort**
+In deze use-case wordt een relatiesoort van een gegevensobjecttype of gegevensgroeptype verbonden aan een keuze middels een aggregation relatie met specialisatie "heeft relatiedoelkeuze". De keuze zelf wordt vervolgens middels een aggregation relatie verbonden aan 2 of meer gegevensobjecttypes.
+
+![Relatiedoelkeuze](/mim-archimate/media/relatiedoelkeuze.png)
+
+ISSUE: In de UML mapping staat "keuzerelatiedoel" in plaats van "relatiekeuzedoel"
+
+
+
+
+
 
 #### Relatierol
 
