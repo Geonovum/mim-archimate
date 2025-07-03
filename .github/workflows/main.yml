@@ -1,0 +1,17 @@
+name: Main Workflow
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    uses: Geonovum/NL-ReSpec-template/.github/workflows/build.yml@main
+
+  check:
+    needs: build
+    uses: Geonovum/NL-ReSpec-template/.github/workflows/check.yml@main
