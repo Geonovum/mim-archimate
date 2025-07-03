@@ -4,7 +4,7 @@ Dit hoofdstuk beschrijft de mapping tussen MIM en de ArchiMate modelleertaal.
 
 ## Inleiding
 Zoals in voorgaande tekst beschreven heeft het waarde heeft om MIM modellen te kunnen uitdrukken in ArchiMate. Het biedt een startpunt voor het opstellen van MIM modellen en maakt het mogelijk om MIM modellen op architectuurniveau inzichtelijk te maken en te verbinden. De voorgestelde mapping ziet er op hoofdlijnen als volgt uit:
-- Een conceptueel informatiemodel in MIM draait primair om objecttypes die bedoeld zijn om uitdrukking te geven aan soorten dingen in de werkelijkheid. Dat past goed op wat in ArchiMate een <a>bedrijfsobject</a>is. MIM objecttypes worden in ArchiMate daarom uitgedrukt als ArchiMate bedriijfsobjecten.
+- Een conceptueel informatiemodel in MIM draait primair om objecttypes die bedoeld zijn om uitdrukking te geven aan soorten dingen in de werkelijkheid. Dat past goed op wat in ArchiMate een <a>bedrijfsobject</a> is. MIM objecttypes worden in ArchiMate daarom uitgedrukt als ArchiMate bedriijfsobjecten.
 - Een logisch gegevensmodel in MIM draait primair om gegevensobjecttypes die bedoeld zijn om uitdrukking te geven aan het structureren van soorten gegevens. Dat past goed op wat in ArchiMate een <a>data-object</a> is. MIM gegevensobjecttypes worden in ArchiMate daarom uitgedrukt als ArchiMate data-objecten.
 
 De definities van de MIM meta-classes en ArchiMate elementen die we aan elkaar relateren zijn niet aan elkaar gelijk. Ze zijn  dus niet hetzelfde. We stellen daarom een meer specifieke interpretatie voor van de ArchiMate elementen. Om die reden is het dan ook nodig om middels specialisatie duidelijk te maken dat betreffende modelelementen de meer specifieke betekenis van MIM volgen. Een ArchiMate bedrijfsobject met als specialisatie "Objecttype" heeft dan de betekenis zoals bedoeld in MIM. Het is voor een specifiek architectuurmodel de vraag in hoeverre alle gemodelleerde bedrijfsobjecten ook deze specialisatie gebruiken. Het is natuurlijk ook nog steeds mogelijk om bedrijfsobjecten te modelleren die de meer algemene ArchiMate betekenis hanteren. Daarmee zou je een meer algemeen ArchiMate bedrijfsobjectmodel kunnen relateren aan een specifieker MIM conceptueel informatiemodel. Tegelijkertijd liggen de MIM en ArchiMate definities zo dicht tegen elkaar aan dat er weinig meerwaarde is om dit echt als gescheiden lagen te modelleren. Dat geldt deels ook voor logische gegevensmodellen en ArchiMate data-objecten, alhoewel je ook echt andere soorten data-objecten zou kunnen modelleren. Denk bijvoorbeeld aan het het modelleren van datasets of registraties als ArchiMate data-objecten.
@@ -30,7 +30,6 @@ De volgende tabel beschrijft hoe de metaclasses in de kern van MIM zich verhoude
 | Gegevensgroeptype   | Data Object              | Gegevensgroeptype  |
 | Generalisatie       | Specialization (inverse) | \-                 |
 | Relatiesoort        | Association, Aggregation of Composition | \-       |
-| Relatieklasse       | Business Object          | Relatieklasse      |
 | Externe koppeling   | Gegevensobjecttype       | Externe koppeling  |
 
 Een relatiesoort kent in ArchiMate drie mogelijkheden: association, aggregation of composition. Er is geen specialisatie van deze relatie nodig omdat de betekenis gebonden is aan één van deze drie mogelijkheden. 
@@ -102,7 +101,7 @@ Het modelelement keuze bepaalt dat er meerdere opties mogelijk zijn, waarvan er 
 | heeft relatiedoelkeuze   | Association             | heeft relatiedoelkeuze   |
 | heeft relatiesoortkeuze  | Association             | heeft relatiesoortkeuze  |   
 
-Er zijn vijf situaties mogelijk waarin een keuze toegepast wordt.
+Er zijn vijf situaties mogelijk waarin een keuze toegepast wordt:
 
 - Use case 1: een keuze tussen datatypen
 - Use case 2: een keuze tussen twee of meer gegevenstypen
@@ -144,12 +143,16 @@ In deze use-case wordt een relatiesoort van een gegevensobjecttype of gegevensgr
 
 ISSUE: In de UML mapping staat "keuzerelatiedoel" in plaats van "relatiekeuzedoel"
 
-
-
-
-
-
 #### Relatierol
+
+![Relatierol](/mim-archimate/media/relatierol.png)
+
+| **MIM metaclass**   | **ArchiMate element**    | **Specialisatie**  |
+| ------------------- | ------------------------ | ------------------ |
+| Relatierol          | Data Object              | Relatierol         |
+| Relatieklasse       | Business Object          | Relatieklasse      |
+
+Relatierollen worden gerepresenteerd als ArchiMate data-objecten, die een associatierelatie hebben met de relatie waarop ze betrekking hebben. Per relatierol wordt bij deze relatie middels een specialisatie aangegeven of het van het type "heeft bron" of "heeft doel" is om aan te geven dat ze betrekking hebben op respectievelijk de bron of het doel.
 
 #### Packages
 
