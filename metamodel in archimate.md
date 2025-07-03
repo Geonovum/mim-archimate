@@ -150,9 +150,18 @@ ISSUE: In de UML mapping staat "keuzerelatiedoel" in plaats van "relatiekeuzedoe
 | **MIM metaclass**   | **ArchiMate element**    | **Specialisatie**  |
 | ------------------- | ------------------------ | ------------------ |
 | Relatierol          | Data Object              | Relatierol         |
-| Relatieklasse       | Business Object          | Relatieklasse      |
 
 Relatierollen worden gerepresenteerd als ArchiMate data-objecten, die een associatierelatie hebben met de relatie waarop ze betrekking hebben. Per relatierol wordt bij deze relatie middels een specialisatie aangegeven of het van het type "heeft bron" of "heeft doel" is om aan te geven dat ze betrekking hebben op respectievelijk de bron of het doel.
+
+#### Relatieklasse
+
+![Relatieklasse](/mim-archimate/media/relatieklasse.png)
+
+| **MIM metaclass**   | **ArchiMate element**    | **Specialisatie**  |
+| ------------------- | ------------------------ | ------------------ |
+| Relatieklasse       | Business Object          | Relatieklasse      |
+
+Relatieklassen worden gerepesenteerd als ArchiMate bedrijfsobjecten, die een associatierelatie hebben met de relatie waarop ze betrekking hebben.
 
 #### Packages
 
