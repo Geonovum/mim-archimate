@@ -134,9 +134,13 @@ VRAAG: Wat is nu fundamenteel anders in use-case 2 en 3? In de LD mapping worden
 
 In deze use-case wordt een relatiesoort van een gegevensobjecttype of gegevensgroeptype verbonden aan een keuze middels een associatierelatie met specialisatie "heeft relatiedoelkeuze". De naam van deze relatie geeft de betekenis ervan weer. De keuze zelf wordt vervolgens middels een aggregatierelatie verbonden aan 2 of meer gegevensobjecttypes.
 
-![Relatiesoortkeuze](/mim-archimate/media/relatiesoortkeuze.png)
+![Relatiedoelkeuze](/mim-archimate/media/relatiedoelkeuze.png)
+
+**Use case 5: Keuze tussen relatiesoorten/relatierollen (elk afzonderlijk betekenisvol)**
 
 In deze use-case wordt een relatiesoort van een gegevensobjecttype of gegevensgroeptype verbonden aan een keuze middels een associatierelatie met specialisatie "heeft relatiesoortkeuze". De naam van deze relatie is niet betekenisvol. De keuze zelf wordt vervolgens middels een aggregatierelatie (inclusief eventuele relatierollen) verbonden aan 2 of meer gegevensobjecttypes. 
+
+![Relatiesoortkeuze](/mim-archimate/media/relatiesoortkeuze.png)
 
 ISSUE: In de UML mapping staat "keuzerelatiedoel" in plaats van "relatiekeuzedoel"
 
