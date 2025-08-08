@@ -10,8 +10,11 @@ on:
 
 jobs:
   build:
-    uses: Geonovum/NL-ReSpec-template/.github/workflows/build.yml@main
+    uses: ./.github/workflows/build.yml
 
-  check:
+  publish:
+    if: github.event_name == 'release'
     needs: build
-    uses: Geonovum/NL-ReSpec-template/.github/workflows/check.yml@main
+    uses: ./.github/workflows/publish.yml
+    secrets:
+      GH_PUSH_TOKEN: ${{ secrets.GH_PUSH_TOKEN }}
